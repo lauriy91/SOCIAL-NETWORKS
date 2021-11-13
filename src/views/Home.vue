@@ -1,31 +1,17 @@
 <template>
-<div>
-    <table>
-        <tr>
-        <td class="navbar">
-            <nav-bar/>
-        </td>
-        <td>
-            <gallery/>
-        </td>
-        </tr>
-    </table>
-</div>
+    <v-toolbar
+      dense
+      floating
+      width=10%
+    >
+      <v-text-field
+        hide-details
+        prepend-icon="mdi-magnify"
+        single-line
+      ></v-text-field>
+
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
+    </v-toolbar>
 </template>
-
-<script>
-import NavBar from '../components/NavBar.vue'
-import Gallery from '../components/Gallery.vue'
-
-  export default {
-    components: {
-        NavBar,
-        Gallery
-    },
-
-  }
-</script>
-
-<style>
-
-</style>

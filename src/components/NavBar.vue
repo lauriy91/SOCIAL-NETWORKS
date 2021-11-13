@@ -1,23 +1,19 @@
 <template class="navbar">
   <v-card >
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant.sync="mini"
-      permanent
-    >
+    <v-navigation-drawer>
       <v-list-item class="px-2">
         <v-list-item-avatar>
           <v-img src="https://cdn-icons-png.flaticon.com/512/194/194938.png"></v-img>
         </v-list-item-avatar>
 
-        <v-list-item-title>Laura Rodriguez</v-list-item-title>
+        <h4>Laura Rodriguez</h4>
 
-        <v-btn
+        <!-- <v-btn
           icon
           @click.stop="mini = !mini"
         >
           <v-icon>mdi-chevron-left</v-icon>
-        </v-btn>
+        </v-btn> -->
       </v-list-item>
 
       <v-divider></v-divider>
@@ -37,8 +33,12 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
 
+      <h4 class="title">Description</h4>
+        <p class="description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ad tempora consequatur quibusdam dolor rem magni rerum quia, dolore ipsum quod debitis dolorum sed assumenda. Nam eaque earum cupiditate ipsum!
+        </p>
+    </v-navigation-drawer>
   </v-card>
 </template>
 
@@ -52,6 +52,7 @@
           { title: 'Home', icon: 'mdi-home' },
           { title: 'Notifications', icon: 'mdi-heart' },
           { title: 'Friends', icon: 'mdi-account-group-outline' },
+          { title: 'Edit', icon: 'mdi-pencil' },
           { title: 'Logout', icon: 'mdi-account' },
         ],
         mini: true,
@@ -64,5 +65,12 @@
 .navbar{
     color: black;
     background-color: black;
+}
+.title{
+    padding: 1em;
+}
+.description{
+    text-align: justify;
+    padding: 1em;
 }
 </style>
