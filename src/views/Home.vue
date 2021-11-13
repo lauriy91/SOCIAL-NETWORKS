@@ -1,4 +1,5 @@
 <template>
+  <div>
     <v-toolbar
       dense
       floating
@@ -14,4 +15,19 @@
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
     </v-toolbar>
+
+    <nav-bar/>
+
+  </div>
+
 </template>
+
+<script>
+import NavBar from '../components/NavBar.vue'
+
+  export default {
+    components: {
+        NavBar
+    }
+  }
+</script>

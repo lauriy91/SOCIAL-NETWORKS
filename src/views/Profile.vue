@@ -6,7 +6,7 @@
             <nav-bar/>
         </td>
         <td class="gallery">
-            <gallery/>
+            <gallery-2/>
         </td>
         </tr>
     </table>
@@ -15,12 +15,12 @@
 
 <script>
 import NavBar from '../components/NavBar.vue'
-import Gallery from '../components/Gallery.vue'
+import Gallery2 from '../components/Gallery2.vue'
 
   export default {
     components: {
         NavBar,
-        Gallery
+        Gallery2
     },
 
   }
