@@ -1,12 +1,14 @@
 <template>
-  <v-app>
+  
+<v-app>
   <v-navigation-drawer app>
-    <!-- -->
+    <!-- navbar -->
     <nav-bar/>
   </v-navigation-drawer>
 
   <v-app-bar app>
     <!-- header -->
+    <Header/>
   </v-app-bar>
 
   <!-- Sizes your content based upon application components -->
@@ -29,19 +31,13 @@
 
 <script>
 import NavBar from '../components/NavBar.vue'
+import Header from './Cabecero.vue'
 
   export default {
     components: {
-        NavBar
+        NavBar,
+        Header
     },
 
   }
 </script>
-
-<style lang="scss">
-.marca{
-  font-family: Brush Script MT;
-  font-size: 2rem;
-  color: black;
-}
-</style>

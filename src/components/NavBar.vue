@@ -6,7 +6,7 @@
           <v-img src="https://cdn-icons-png.flaticon.com/512/194/194938.png"></v-img>
         </v-list-item-avatar>
 
-        <h4>Laura Rodriguez</h4>
+        <h4>Lauriy Rodriguez</h4>
 
         <!-- <v-btn
           icon

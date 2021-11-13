@@ -1,42 +1,39 @@
 <template>
-<div class="gallery">
-  <v-row>
-    <v-col
-      v-for="n in 9"
-      :key="n"
-      class="d-flex child-flex"
-      cols="4"
+  <v-card>
+    <v-tabs class="gallery"
+      color="deep-purple accent-4"
+      right
     >
-      <v-img
-        :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-        :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-        aspect-ratio="0.45"
-        class="grey lighten-2"
+      <v-tab>PHOTOS</v-tab>
+      <v-tab>VIDEOS</v-tab>
+
+      <v-tab-item
+        v-for="n in 3"
+        :key="n"
+        
       >
-        <template v-slot:placeholder>
-          <v-row
-            class="fill-height ma-0"
-            align="center"
-            justify="center"
-          >
-            <v-progress-circular
-              indeterminate
-              color="grey lighten-5"
-            ></v-progress-circular>
+        <v-container fluid>
+          <v-row>
+            <v-col
+              v-for="i in 9"
+              :key="i"
+              cols="12"
+              md="4"
+              
+            >
+              <v-img
+                :src="`https://picsum.photos/500/300?image=${i * n * 5 + 10}`"
+                :lazy-src="`https://picsum.photos/10/6?image=${i * n * 5 + 10}`"
+                aspect-ratio="1"
+              ></v-img>
+            </v-col>
           </v-row>
-        </template>
-      </v-img>
-    </v-col>
-  </v-row>
-</div>
+        </v-container>
+      </v-tab-item>
+    </v-tabs>
+  </v-card>
 </template>
 
-<script>
- 
-</script>
+<style lang="scss">
 
-<style>
-img{
-    width: 70%;
-}
 </style>

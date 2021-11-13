@@ -1,4 +1,5 @@
 <template>
+    <div class="login">
     <!-- Usamos la etiqueta form para indicarle a nuestro código la construcción de un formulario -->
     <form class="form">
         <h2 class="form_title">Inicia Sesión</h2>
@@ -25,6 +26,7 @@
             <label class="forgot_password"> <a href="#" class="form_link">Olvidé Contraseña</a></label>
         </div>
     </form>
+    </div>
 </template>
 
 <script>
@@ -41,7 +43,7 @@
     box-sizing: border-box;
 }
 
-body{
+.login{
     font-family: 'Roboto', sans-serif;
     background: linear-gradient( rgb(221, 6, 132), rgb(126, 13, 136), rgb(112, 2, 155));
     background-position: 0 0, 10px 10 px;
