@@ -6,7 +6,7 @@
     <banner/>
 </nav>
 
-<section>
+<section class="gallery">
     <gallery/>
 </section>
 
@@ -30,5 +30,8 @@ import Banner from '../components/Banner.vue'
 .marca{
     text-align: center;
     font-size: 4rem;
+}
+.gallery{
+    margin-top: 13em;
 }
 </style>

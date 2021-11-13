@@ -1,9 +1,13 @@
 <template>
+
+<div class="gallery">
   <v-card>
-    <v-tabs class="gallery"
+
+    <v-tabs
       color="deep-purple accent-4"
       right
     >
+    
       <v-tab>PHOTOS</v-tab>
       <v-tab>VIDEOS</v-tab>
 
@@ -32,8 +36,14 @@
       </v-tab-item>
     </v-tabs>
   </v-card>
+
+</div>
 </template>
 
 <style lang="scss">
-
+.gallery{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 90%;
+  margin-left: 5%;
+}
 </style>
