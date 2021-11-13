@@ -1,5 +1,6 @@
 <template>
     <!-- Usamos la etiqueta form para indicarle a nuestro código la construcción de un formulario -->
+    <div class="login">
     <form class="form">
         <h2 class="form_title">Inicia Sesión</h2>
         <p class="form_parragraph">¿Aún no tienes cuenta? <a href="#" class="form_link">Entra aquí</a></p>
@@ -25,6 +26,7 @@
             <label class="forgot_password"> <a href="#" class="form_link">Olvidé Contraseña</a></label>
         </div>
     </form>
+    </div>
 </template>
 
 <script>
@@ -36,13 +38,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,400&display=swap');
 
 *{
-    margin-left:10%;
+    margin-left:2%;
     padding:0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body{
     font-family: 'Roboto', sans-serif;
+    padding-left: 35%;
     background: linear-gradient( rgb(221, 6, 132), rgb(126, 13, 136), rgb(112, 2, 155));
     background-position: 0 0, 10px 10 px;
     display: flex;
@@ -52,12 +55,12 @@ body{
 .form{
     background-color: white;
     margin: auto;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
-    padding: 4.5em 3em;
+    padding: 1em 1em;
     border-radius: 10px;
     /* con el rgb le doy colores a la sombra y el /con el porcentaje es su nivel de transparencia */
-    box-shadow: 0 5px 10px -5px rgb(0,0,0 / 30%);
+    box-shadow: 2px 5px 10px -5px rgb(0,0,0 / 30%);
     text-align: center;
 }
 
@@ -76,7 +79,7 @@ body{
 }
 
 .form_container{
-    margin-top: 3em;
+    margin-top: 2em;
     display: grid;
 }
 
