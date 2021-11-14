@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
 import Profile from '../views/Profile.vue'
 import Home from '../views/Home.vue'
+import HomeBar from '../views/HomeBar.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/homeBar',
+    name: 'HomeBar',
+    component: HomeBar
   }
 ]
 

@@ -1,47 +1,20 @@
 <template>
-  <v-app>
-  <v-navigation-drawer app>
-    <!-- -->
-    <nav-bar/>
-  </v-navigation-drawer>
-
-  <v-app-bar app>
-    <!-- header -->
-  </v-app-bar>
-
-  <!-- Sizes your content based upon application components -->
-  <v-main>
-
-    <!-- Provides the application the proper gutter -->
-    <v-container fluid>
-
-      <!-- If using vue-router -->
-      <router-view></router-view>
-    </v-container>
-  </v-main>
-
-  <v-footer app>
-    <!-- -->
-  </v-footer>
-</v-app>
-
+  <home class="home"/>
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
+import Home from '../components/Home.vue'
 
   export default {
     components: {
-        NavBar
+        Home
     },
 
   }
 </script>
 
 <style lang="scss">
-.marca{
-  font-family: Brush Script MT;
-  font-size: 2rem;
-  color: black;
+.home{
+  background: linear-gradient( rgb(228, 19, 193), rgb(126, 13, 136), rgb(112, 2, 155));
 }
 </style>
