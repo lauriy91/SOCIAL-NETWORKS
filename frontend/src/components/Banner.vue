@@ -23,11 +23,21 @@
 
         <v-spacer></v-spacer>
 
+        <label v-if="profile">
+        <v-btn icon color="white">
+          <router-link to="/profile">
+          <v-icon>mdi-account</v-icon>
+          </router-link>
+        </v-btn> 
+        </label>
+
+        <label v-if="home">
         <v-btn icon color="white">
           <router-link to="/home">
           <v-icon>mdi-home</v-icon>
           </router-link>
-        </v-btn>     
+        </v-btn>   
+        </label>  
 
         <v-btn icon>
           <v-icon>mdi-magnify</v-icon>
@@ -48,7 +58,7 @@
               v-bind="attrs"
               v-on="on"
             >
-              <router-link to="/login"><v-icon>mdi-dots-vertical</v-icon></router-link>
+              <router-link to="/login"><v-icon router-link to="/login">mdi-dots-vertical</v-icon></router-link>
             </v-btn>
           </template>
   
@@ -64,8 +74,8 @@
   
         <template v-slot:extension>
           <v-tabs align-with-title>
-            <v-tab>Followers</v-tab>
-            <v-tab>Following</v-tab>
+            <v-tab><label class="follow">Followers</label></v-tab>
+            <v-tab><label class="follow">Following</label></v-tab>
             <v-btn icon><v-icon>mdi-plus</v-icon></v-btn>
           </v-tabs>
         </template>
@@ -76,11 +86,25 @@
 </div>
 </template>
 
+<script>
+
+  export default {
+      props:{
+        profile: Boolean,
+        home: Boolean
+        }
+  }
+
+</script>
+
 <style lang="scss">
 .avatar{
   margin: 2em;
 }
 .avatar_name{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.follow{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 </style>

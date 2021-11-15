@@ -2,15 +2,19 @@
     <div class="login">
     <!-- Usamos la etiqueta form para indicarle a nuestro código la construcción de un formulario -->
     <form class="form">
-        <h2 class="form_title">Inicia Sesión</h2>
-        <p class="form_parragraph">¿Aún no tienes cuenta? <a href="#" class="form_link"><router-link to="/newUser">Entra aquí</router-link></a></p>
+        <h2 class="form_title"><label v-if="loginUser">Inicia Sesión</label></h2>
+        <h2 class="form_title"><label v-if="newUser">Nuevo Usuario</label></h2>
+
+        <label v-if="loginUser" class="form_parragraph">¿Aún no tienes cuenta? <a href="#" class="form_link"><router-link to="/newUser">Entra aquí</router-link></a></label>
 
         <div class="form_container">
-            <div v-show="false" class="form_group">
+            <label v-if="newUser">
+            <div class="form_group">
                 <input type="text" id="name" class="form_input" placeholder=" ">
                 <label for="name" class="form_label"> Nombre: </label>
                 <span class="form_line"></span>
             </div>
+            </label>
             <div class="form_group">
                 <input type="text" id="user" class="form_input" placeholder=" ">
                 <label for="user" class="form_label"> Usuario: </label>
@@ -23,15 +27,29 @@
             </div>
 
             <router-link to="/profile">
+                <label v-if="loginUser">
                 <input type="submit" class="form_submit" value="Entrar">
+                </label>
             </router-link>
-            <label class="forgot_password"> <a href="#" class="form_link">Olvidé Contraseña</a></label>
+            <router-link to="/login">
+                <label v-if="newUser">
+                <input type="submit" class="form_submit" value="Registrar">
+                </label>
+            </router-link>
+            <label v-if="loginUser" class="forgot_password"> <a href="#" class="form_link">Olvidé Contraseña</a></label>
         </div>
     </form>
     </div>
 </template>
 
 <script>
+
+  export default {
+      props:{
+        loginUser: Boolean,
+        newUser: Boolean
+        }
+  }
 
 </script>
 
@@ -67,7 +85,6 @@
 
 .form_title{
     font-size: 2.2rem;
-    margin-bottom: .5em;
 }
 
 .form_paragraph{

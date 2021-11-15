@@ -1,22 +1,22 @@
 <template>
-<section>
-<home-bar/>
-<feed class="feed"/>
-<feed class="feed"/>
-<feed class="feed"/>
-<feed class="feed"/>
-<feed class="feed"/>
-</section>
+  <section>
+    <banner :profile="true"/>
+    <feed class="feed"/>
+    <feed class="feed"/>
+    <feed class="feed"/>
+    <feed class="feed"/>
+    <feed class="feed"/>
+  </section>
 </template>
 
 <script>
 import Feed from '../components/Feed.vue'
-import HomeBar from '../components/HomeBar.vue'
+import Banner from './Banner.vue'
 
   export default {
     components: {
-        HomeBar,
-        Feed
+        Feed,
+        Banner
     }
   }
 </script>

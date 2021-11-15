@@ -1,5 +1,5 @@
 <template>
-    <login/>
+    <login :newUser="true"/>
 </template>
 
 <script>

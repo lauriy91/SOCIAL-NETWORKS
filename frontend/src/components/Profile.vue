@@ -3,7 +3,7 @@
 <div>
 
 <nav>
-    <banner/>
+    <banner :home="true"/>
 </nav>
 
 <section class="gallery">
