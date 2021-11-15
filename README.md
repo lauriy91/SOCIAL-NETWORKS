@@ -2,11 +2,8 @@
 
 <p>Sharing pictures and social interactions with NodeJs in the Backend, VueJs in the Frontend and MongoDB in the Database amongst other libreries and frameworks.</p>
 
-<<<<<<< HEAD
-<h1> THING THAT YOU CAN DO:</h1>
-=======
+
 <h1> THING THAT YOU CAN DO: </h1>
->>>>>>> 00a5352a35bed8dcef1c804d16e35b2046add53b
 
 
 <h2> Create a account, login and logout... </h2>
