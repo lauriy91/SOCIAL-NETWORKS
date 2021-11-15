@@ -1,68 +1,59 @@
-//Importar express
+//Import express
 const express = require('express');
-//Importar mongoose
+//Import mongoose
 const mongoose = require('mongoose');
-//Importamos la conexión a la BD
+//Import the conection to Db
 const DatabaseConnection = require("./database/databaseConnection")
-//Importamos las rutas
-const AuthRoutes = require('./routers/usuarioRouter')
-const FeedRoutes = require('./routers/reservaRouter')
-const LoginOutRoutes = require('./routers/alojamientoRouter')
+//Import routes
+const UserRoute = require('./routes/userRoutes')
 const cors = require('cors')
 
 
-//Levantamos el servidor
+//Init srver
 class Server{
     constructor(){
-        //Construimos un objeto de conexion a la BD
+        //Building an object´s conection to DB
         const dbConnection = new DatabaseConnection();
-        //Variable que hace referencia al servidor, crea app express
+        //Variable to create app express
         this.app = express();
-        //Configuramos parametros de express para levantar el servidor
+        //Config express's param for init server
         this.config();
     }
 
     config(){
-        //Indicar el puerto por el que se ejecutará el servidor
+        //Say port where server work it
         this.app.set('port', process.env.PORT || 3000);
-        //Indicar el uso del formato json para enviar informacion con JSON
+        //Sendindg information Json
         this.app.use(express.json());
         this.app.use(cors())
-        //Configurar ruta raíz
+        //Config root path
         let router = express.Router();
         router.get('/', (req, res) => {
-            console.log("¡Conexión exitosa!");
-            res.status(200).json({message: "¡Conexión exitosa!"});
+            console.log("¡Conection successful!");
+            res.status(200).json({message: "¡Conection successful"});
         });
 
-        /*** CREAR RUTAS ***/
+        /*** CREATE ROUTES ***/
 
-        //Creamos rutas. Después de importar serverRouters creamos el objeto server
-        const alojamientoR = new RouterAlojamiento();
-        const usuarioR = new UsuarioRouter();
-        const reservaR = new ReservaRouter();
-        //Añadir la rutas al servidor El servidor utiliza la ruta que se creó previamente
+        //Create and import serverRouters
+        const userR = new UserRoute();
+        //Add the last route to the server
         this.app.use('/public', express.static(`${__dirname}/imagenes`))
         this.app.use(router);
-        this.app.use(alojamientoR.router);
-        this.app.use(reservaR.router);
-        this.app.use(usuarioR.router);
-        //Levantar el servidor y ponerlo a la escucha
+        this.app.use(userR.router);
+        //Init server and listenning
         this.app.listen( this.app.get('port'), ()=>{
-            console.log("Corriendo por el puerto =>", this.app.get('port'));
+            console.log("Running into the Port =>", this.app.get('port'));
         });
     }
 
-    conectarBD(){
-        //mongoose.Promise = global.Promise;
+    conectDB(){
         mongoose.connect(database.db).then(()=>{
-            console.log("Conexión a BD con éxito");
+            console.log("Conection to DB successful");
         }).catch((err)=>{
-            console.error("Error de conexión");
+            console.error("Connection error");
         });
     }
-
-
 }
 
 const obj = new Server();

@@ -2,26 +2,26 @@
 
 <p>Sharing pictures and social interactions with NodeJs in the Backend, VueJs in the Frontend and MongoDB in the Database amongst other libreries and frameworks.</p>
 
-<h1> THING THAT YOU CAN DO: ***</h1>
+<h1> THING THAT YOU CAN DO:</h1>
 
 
 <h2> Create a account, login and logout... </h2>
 
-<img src= "/imgs/login.png" alt="Login"/>
+[![login.png](https://i.postimg.cc/0QsKV8rm/login.png)](https://postimg.cc/Mc9GTJ7K)
 
 <h2> Create a profile... </h2>
 
-<img src= "/imgs/profile.png" alt="Login"/>
+[![profile.png](https://i.postimg.cc/3Rtr27G3/profile.png)](https://postimg.cc/Vrbccx4h)
 
 <h2> Upload images and interact with its... </h2>
 
-<img src= "/imgs/upload.png" alt="Login"/>
+[![upload.png](https://i.postimg.cc/9QPhGC3s/upload.png)](https://postimg.cc/75Ld4vZN)
 
 <label>[...]soon Videos!</label>
 
 <h2> Interact with the feed... </h2>
 
-<img src= "/imgs/postit.png" alt="Login"/>
+[![postit.png](https://i.postimg.cc/br2XdjHC/postit.png)](https://postimg.cc/7JDtQdR0)
 
 <h2> Likes, comments and more... </h2>
 

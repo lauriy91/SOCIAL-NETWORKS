@@ -6,10 +6,10 @@
     </div>
 
     <div class="postHistories">
-    <postHistories class="PostHistories"/>
-    <postHistories  class="PostHistories"/>
-    <postHistories  class="PostHistories"/>
-    <postHistories  class="PostHistories"/>
+    <postHistories class="PostHistories"/><br><br>
+    <postHistories  class="PostHistories"/><br><br>
+    <postHistories  class="PostHistories"/><br><br>
+    <postHistories  class="PostHistories"/><br><br>
     <postHistories  class="PostHistories"/>
     </div>
 

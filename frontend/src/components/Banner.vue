@@ -62,14 +62,14 @@
             </v-btn>
           </template>
   
-          <v-list>
+          <!-- <v-list>
             <v-list-item
               v-for="(item, i) in items"
               :key="i"
             >
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item>
-          </v-list>
+          </v-list> -->
         </v-menu>
   
         <template v-slot:extension>
