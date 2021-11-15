@@ -27,7 +27,6 @@
 
 <h1>Enviroment Variables</h1>
 
-<ul>
 <li>MONGODB_URI</li>
 <li>Mongoose</li>
 <li>Express</li>
@@ -37,7 +36,6 @@
 <li>Morgan</li>
 <li>Cors</li>
 <li>Nodemon</li>
-</u>
 
 <h1>Installation</h1>
 
@@ -51,12 +49,10 @@
 
 <label>Postman</label>
 
-<ul>
 <li>POST</li>
 <li>GET</li>
 <li>PUT</li>
 <li>DELETE</li>
-</u>
 
 <h1>AUTHOR</h1>
-<label>Laura Rodriguez King</label>
+<h2>Laura Rodriguez King</h2>
