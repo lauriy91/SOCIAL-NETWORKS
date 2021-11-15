@@ -18,14 +18,14 @@ class userRoutes{
         const objUserC = new userController();
 
         /*** CRUD ***/
-        //Is assigned to the route the consult user method
-        this.router.post("/user/save", objUserC.userSaved);
-        //Validation route
-        this.router.get("/users/login", objUserC.userLogin);
-        this.router.get("/users", objUserC.userConsult);
-        this.router.get("/user/:id", objUserC.userFindId);
-        this.router.put("/user/update/avatar", upload.single('avatar'), objUserC.uploadAvatar);
-        this.router.delete("/users/:id", objUserC.userDeleted);
+        const objUser = new UserController();
+        //Validated routes
+        this.router.post("/user/save", objUser.save);
+        this.router.get("/user/:id", objUser.findId);
+        this.router.get("/user", objUser.findAll);
+        this.router.put("/user/update/avatar", upload.single('avatar'), objUser.uploadAvatar);
+        this.router.put("/user/update", objUser.userUpdate);
+        this.router.delete("/user/delete", objUser.userDeleted);
     }
 }
 
