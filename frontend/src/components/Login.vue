@@ -3,10 +3,10 @@
     <!-- Usamos la etiqueta form para indicarle a nuestro código la construcción de un formulario -->
     <form class="form">
         <h2 class="form_title">Inicia Sesión</h2>
-        <p class="form_parragraph">¿Aún no tienes cuenta? <a href="#" class="form_link">Entra aquí</a></p>
+        <p class="form_parragraph">¿Aún no tienes cuenta? <a href="#" class="form_link"><router-link to="/newUser">Entra aquí</router-link></a></p>
 
         <div class="form_container">
-            <div class="form_group">
+            <div v-show="false" class="form_group">
                 <input type="text" id="name" class="form_input" placeholder=" ">
                 <label for="name" class="form_label"> Nombre: </label>
                 <span class="form_line"></span>
@@ -22,7 +22,9 @@
                 <span class="form_line"></span>
             </div>
 
-            <input type="submit" class="form_submit" value="Entrar">
+            <router-link to="/profile">
+                <input type="submit" class="form_submit" value="Entrar">
+            </router-link>
             <label class="forgot_password"> <a href="#" class="form_link">Olvidé Contraseña</a></label>
         </div>
     </form>
@@ -123,9 +125,10 @@
 }
 
 .form_submit{
+    width: 60%;
     margin-top: 3rem;
     background: steelblue;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
     font-size: 1rem;

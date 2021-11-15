@@ -24,8 +24,10 @@
         <v-spacer></v-spacer>
 
         <v-btn icon color="white">
+          <router-link to="/home">
           <v-icon>mdi-home</v-icon>
-        </v-btn>
+          </router-link>
+        </v-btn>     
 
         <v-btn icon>
           <v-icon>mdi-magnify</v-icon>
@@ -46,7 +48,7 @@
               v-bind="attrs"
               v-on="on"
             >
-              <v-icon>mdi-dots-vertical</v-icon>
+              <router-link to="/login"><v-icon>mdi-dots-vertical</v-icon></router-link>
             </v-btn>
           </template>
   

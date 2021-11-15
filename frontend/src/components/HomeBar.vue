@@ -10,9 +10,11 @@
         scroll-target="#scrolling-techniques-6"
         >
  
-        <v-list-item-avatar size="50" class="avatar" >
+        <router-link to="/profile">
+        <v-list-item-avatar router-link to="/profile" size="50" class="avatar" >
           <v-img src="https://cdn-icons-png.flaticon.com/512/194/194938.png"></v-img>
-        </v-list-item-avatar>
+        </v-list-item-avatar >
+        </router-link>
   
         <v-toolbar-title>Lauriy Rodriguez</v-toolbar-title>
   
