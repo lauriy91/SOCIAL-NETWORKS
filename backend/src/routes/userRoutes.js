@@ -18,7 +18,6 @@ class userRoutes{
         const objUserC = new userController();
 
         /*** CRUD ***/
-        const objUser = new UserController();
         //Validated routes
         this.router.post("/user/save", objUser.save);
         this.router.get("/user/:id", objUser.findId);
