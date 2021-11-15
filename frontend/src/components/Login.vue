@@ -93,7 +93,7 @@
 
 .form_link{
     font-weight: 400;
-    color: rgba(2, 39, 246, 0.685);
+    color: rgba(249, 250, 252, 0.685);
 }
 
 .form_container{
@@ -144,7 +144,7 @@
 .form_submit{
     width: 60%;
     margin-top: 3rem;
-    background: steelblue;
+    background: rgb(231, 197, 235);
     color: rgb(255, 255, 255);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;

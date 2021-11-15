@@ -3,7 +3,7 @@
 <div>
 
 <nav>
-    <banner :home="true"/>
+    <banner :feed="true"/>
 </nav>
 
 <section class="gallery">
@@ -32,6 +32,6 @@ import Banner from '../components/Banner.vue'
     font-size: 4rem;
 }
 .gallery{
-    margin-top: 13em;
+    margin-top: 2em;
 }
 </style>

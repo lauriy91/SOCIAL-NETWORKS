@@ -1,28 +1,38 @@
 <template>
   <section>
-    <banner :profile="true"/>
-    <feed class="feed"/>
-    <feed class="feed"/>
-    <feed class="feed"/>
-    <feed class="feed"/>
-    <feed class="feed"/>
+    <table>
+      <tr>
+        <td><banner :profile="true"/></td>
+      </tr>
+      <tr>
+        <td>
+        <feed-2 class="feed-2"/>
+        <feed-2  class="feed-2"/>
+        <feed-2  class="feed-2"/>
+        <feed-2  class="feed-2"/>
+        <feed-2  class="feed-2"/>
+        </td>
+      </tr>
+    </table>
   </section>
 </template>
 
 <script>
-import Feed from '../components/Feed.vue'
+import Feed2 from './PostHistories.vue'
 import Banner from './Banner.vue'
 
   export default {
     components: {
-        Feed,
+        Feed2,
         Banner
     }
   }
 </script>
 
 <style>
-.feed{
+.feed-2{
+  background: white;
+  background-color: white;
   margin-top: 6%;
   margin-left: 30%;
 }

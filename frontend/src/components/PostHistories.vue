@@ -1,0 +1,64 @@
+<template>
+  <v-card
+    class="mx-auto"
+    max-width="60%"
+  >
+    <v-img
+      src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
+      :aspect-ratio="16/9"
+    >
+    </v-img>
+    <v-card-title>
+      <div class="text-h4 mb-2">
+        Welcome Home...
+      </div>
+      <v-spacer></v-spacer>
+      <div class="text-h6 font-weight-regular grey--text">
+        Monday, 12:30 PM, Mostly Sunny
+      </div>
+    </v-card-title>
+    <v-row
+      class="px-4 grey--text"
+      align="center"
+    >
+      <v-avatar
+        size="24"
+        class="mr-4"
+      >
+        <v-img
+          src="https://cdn.vuetifyjs.com/images/weather/part-cloud-48px.png"
+          contain
+        ></v-img>
+      </v-avatar>
+
+      <span>81° / 62°</span>
+    </v-row>
+
+    <v-divider class="mt-6 mx-4"></v-divider>
+
+    <v-card-text>
+      <!-- <v-chip
+        class="mr-2"
+        @click="lights"
+      > -->
+        <v-btn icon>
+            <v-icon>mdi-heart</v-icon>
+        </v-btn>
+
+        <v-btn icon>
+            <v-icon>mdi-bookmark</v-icon>
+        </v-btn>
+
+        <v-btn icon>
+            <v-icon>mdi-comment</v-icon>
+        </v-btn>
+      <!-- </v-chip> -->
+    </v-card-text>
+  </v-card>
+</template>
+
+<script>
+  export default {
+
+  }
+</script>

@@ -1,8 +1,8 @@
 <template>
-    <div id="app">
+  <div class="overflow-hidden">
       <v-app-bar
-        absolute
-        color="#6A76AB"
+        width="100%"
+        color="white"
         dark
         prominent
         src="https://picsum.photos/1920/1080?random"
@@ -10,7 +10,7 @@
         <template v-slot:img="{ props }">
           <v-img
             v-bind="props"
-            gradient="to top right, rgb(221, 6, 132, .7), rgb(126, 13, 136, .7), rgb(112, 2, 155, .7)"
+            gradient="rgb(221, 6, 132, .7), rgb(126, 13, 136, .7), rgb(112, 2, 155, .7)"
           ></v-img>
         </template>
   
@@ -31,9 +31,9 @@
         </v-btn> 
         </label>
 
-        <label v-if="home">
+        <label v-if="feed">
         <v-btn icon color="white">
-          <router-link to="/home">
+          <router-link to="/feed">
           <v-icon>mdi-home</v-icon>
           </router-link>
         </v-btn>   
@@ -73,17 +73,16 @@
         </v-menu>
   
         <template v-slot:extension>
-          <v-tabs align-with-title>
+          <v-tabs align-with-title style="margin-top:2rem">
             <v-tab><label class="follow">Followers</label></v-tab>
             <v-tab><label class="follow">Following</label></v-tab>
             <v-btn icon><v-icon>mdi-plus</v-icon></v-btn>
           </v-tabs>
         </template>
         
-
       </v-app-bar>
 
-</div>
+  </div>
 </template>
 
 <script>
@@ -91,20 +90,24 @@
   export default {
       props:{
         profile: Boolean,
-        home: Boolean
+        feed: Boolean
         }
   }
 
 </script>
 
 <style lang="scss">
-.avatar{
-  margin: 2em;
+.overflow-hidden{
+  background-color: white;
+  background: white;
+  color: white;
 }
 .avatar_name{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 2em;
 }
 .follow{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .8em;
 }
 </style>

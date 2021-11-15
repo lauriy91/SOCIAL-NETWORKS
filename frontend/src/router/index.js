@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
 import Profile from '../views/Profile.vue'
-import Home from '../views/Home.vue'
+import Feed from '../views/Feed.vue'
 import Pruebas from '../views/Pruebas.vue'
 import NewUser from '../views/NewUser.vue'
 
@@ -21,14 +21,9 @@ const routes = [
     component: Profile
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    component: Home
+    path: '/feed',
+    name: 'Feed',
+    component: Feed
   },
   {
     path: '/newUser',
