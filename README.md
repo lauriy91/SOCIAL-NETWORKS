@@ -2,7 +2,11 @@
 
 <p>Sharing pictures and social interactions with NodeJs in the Backend, VueJs in the Frontend and MongoDB in the Database amongst other libreries and frameworks.</p>
 
+<<<<<<< HEAD
 <h1> THING THAT YOU CAN DO:</h1>
+=======
+<h1> THING THAT YOU CAN DO: </h1>
+>>>>>>> 00a5352a35bed8dcef1c804d16e35b2046add53b
 
 
 <h2> Create a account, login and logout... </h2>
@@ -27,7 +31,6 @@
 
 <h1>Enviroment Variables</h1>
 
-<ul>
 <li>MONGODB_URI</li>
 <li>Mongoose</li>
 <li>Express</li>
@@ -37,28 +40,23 @@
 <li>Morgan</li>
 <li>Cors</li>
 <li>Nodemon</li>
-</u>
 
 <h1>Installation</h1>
 
-<ul>
 <li>git clone https://github.com/lauriy91/SOCIAL-NETWORKS.git</li>
 <li>cd SOCIAL-NETWORKS</li>
 <li>npm install</li>
 <li>npm run build</li>
 <li>npm start</li>
-</u>
 
 <h1>Testing</h1>
 
 <label>Postman</label>
 
-<ul>
 <li>POST</li>
 <li>GET</li>
 <li>PUT</li>
 <li>DELETE</li>
-</u>
 
 <h1>AUTHOR</h1>
-<label>Laura Rodriguez King</label>
+<h2>Laura Rodriguez King</h2>
