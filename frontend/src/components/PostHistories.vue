@@ -1,7 +1,7 @@
 <template>
   <v-card
     class="mx-auto"
-    max-width="60%"
+    max-width="50%"
   >
     <v-img
       src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
