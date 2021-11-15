@@ -2,7 +2,7 @@
 
 <p>Sharing pictures and social interactions with NodeJs in the Backend, VueJs in the Frontend and MongoDB in the Database amongst other libreries and frameworks.</p>
 
-<h1> THING THAT YOU CAN DO: ***</h1>
+<h1> THING THAT YOU CAN DO: </h1>
 
 
 <h2> Create a account, login and logout... </h2>
@@ -41,13 +41,11 @@
 
 <h1>Installation</h1>
 
-<ul>
 <li>git clone https://github.com/lauriy91/SOCIAL-NETWORKS.git</li>
 <li>cd SOCIAL-NETWORKS</li>
 <li>npm install</li>
 <li>npm run build</li>
 <li>npm start</li>
-</u>
 
 <h1>Testing</h1>
 
