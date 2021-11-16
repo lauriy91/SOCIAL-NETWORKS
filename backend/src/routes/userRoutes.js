@@ -2,7 +2,7 @@
 const express = require('express');
 
 //Import it controller
-const userController = requiere('../controllers/userController');
+const userController = require('../controllers/userController');
 const upload = require('../libs/storaje');
 
 //Constructor
@@ -19,12 +19,12 @@ class userRoutes{
 
         /*** CRUD ***/
         //Validated routes
-        this.router.post("/user/save", objUser.save);
-        this.router.get("/user/:id", objUser.findId);
-        this.router.get("/user", objUser.findAll);
-        this.router.put("/user/update/avatar", upload.single('avatar'), objUser.uploadAvatar);
-        this.router.put("/user/update", objUser.userUpdate);
-        this.router.delete("/user/delete", objUser.userDeleted);
+        this.router.post("/user/save", objUserC.save);
+        this.router.get("/user/:id", objUserC.findId);
+        this.router.get("/user", objUserC.findAll);
+        this.router.put("/user/update/avatar", upload.single('avatar'), objUserC.uploadAvatar);
+        this.router.put("/user/update", objUserC.userUpdated);
+        this.router.delete("/user/delete", objUserC.userDelete);
     }
 }
 

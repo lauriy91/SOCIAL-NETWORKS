@@ -1,5 +1,5 @@
 //Necessary imports and turn its and objects
-const user = require("../models/userModel");
+const user = require("../models/user");
 const fs = require("fs-extra");
 
 //Config my cloudinary for upload images

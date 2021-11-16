@@ -44,7 +44,7 @@
           <span class="form_line"></span>
         </div>
 
-        <!-- <router-link to="/profile"> -->
+        <router-link to="/profile">
           <label v-if="loginUser">
             <v-btn 
               :disabled="!valid" 
@@ -53,9 +53,10 @@
               @click="validate" 
               value="Entrar"
               color="indigo"
-              font-color="white">Entrar
+              font-color="white">Ingresar
             </v-btn>
           </label>
+          </router-link>
 
         <!-- </router-link> -->
         <router-link to="/">
@@ -127,7 +128,10 @@ export default {
           window.alert(badpass)
         }else{
           console.log(res.data)
-          localStorage.setItem('_id', res.data.data._id )
+          localStorage.setItem('user_name', res.data.data.user_name)
+          localStorage.setItem('user_id', res.data.data.user_id)
+          localStoraje.getItem("user_name")
+          localStoraje.getItem("user_id")
           this.$router.push('/profile')
         }
       }).catch(error=>{console.log(error)})

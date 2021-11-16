@@ -42,7 +42,7 @@ class imageController{
             if(error){
                res.status(500).json(error)
             }else{
-                res.status(200).json({"message":  "Like added"})
+                res.status(200).json({"likes":  addlike})
             }
         })
     }
@@ -60,11 +60,11 @@ class imageController{
                 if(error){
                     res.status(500).json(error)
                 }else{
-                    res.status(200).json({"message":  "Like removed"})
+                    res.status(200).json({"likes":  addlike})
                 }
             })
         }else{
-            res.status(200).json({"message":  "0 likes"})
+            res.status(200).json({"likes":  0})
         }
         
     }
