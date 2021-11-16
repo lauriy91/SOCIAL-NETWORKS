@@ -76,7 +76,7 @@
           <v-tabs align-with-title style="margin-top:2rem">
             <v-tab><label class="follow">Followers</label></v-tab>
             <v-tab><label class="follow">Following</label></v-tab>
-            <v-btn icon><v-icon>mdi-plus</v-icon></v-btn>
+            <add-botton/>
           </v-tabs>
         </template>
         
@@ -86,12 +86,16 @@
 </template>
 
 <script>
+import AddBotton from './AddBotton.vue'
 
   export default {
-      props:{
-        profile: Boolean,
-        feed: Boolean
-        }
+    components:{
+      AddBotton
+    },
+    props:{
+      profile: Boolean,
+      feed: Boolean
+    }
   }
 
 </script>
