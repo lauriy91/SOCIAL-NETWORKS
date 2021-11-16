@@ -64,11 +64,5 @@
 
 <h1>AUTHOR</h1>
 <h2>Laura Rodriguez King</h2>
-# dss
 
-SOCIAL-NETWORKS
-
-# dss
-
-# SocialNetworks
 
