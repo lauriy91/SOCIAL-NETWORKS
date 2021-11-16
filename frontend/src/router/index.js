@@ -11,7 +11,7 @@ Vue.use(VueRouter)
 // Traemos todas las rutas que tendrá el enlace
 const routes = [
   {
-    path: '/login',
+    path: '/',
     name: 'Login',
     component: Login
   },

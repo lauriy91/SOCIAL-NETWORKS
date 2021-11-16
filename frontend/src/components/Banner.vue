@@ -94,7 +94,8 @@ import AddBotton from './AddBotton.vue'
     },
     props:{
       profile: Boolean,
-      feed: Boolean
+      feed: Boolean,
+      upPhotos: String,
     }
   }
 
